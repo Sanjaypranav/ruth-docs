@@ -10,7 +10,16 @@ To install Ruth Cli, run the following command:
 pip install ruth-nlu
 ```
 
-## 
+## Initialize Ruth 
+
+To initialize Ruth, run the following command:
+
+```bash
+ruth init
+```
+the output will be as follows:
+
+<img src="img/ruth-cli.png"></img>
 
 ## Usage
 
@@ -27,6 +36,18 @@ ruth train -d path/to/training_data.json -p path/to/pipeline.yml
 To test a Ruth model, run the following command:
 
 ```bash
-ruth parse 
+ruth parse -m path/to/model -t <text>
+```
+for example,
+
+```bash
+ruth parse -m model -t "I want to book a flight"
+```
+### Evaluate
+
+To evaluate a Ruth model, run the following command:
+
+```bash
+ruth evaluate -m path/to/model -d path/to/test_data.json
 ```
 
