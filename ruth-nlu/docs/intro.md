@@ -88,6 +88,9 @@ for example, to train the model, run the following command
 ```bash
 usage: $ ruth [-h] [-v] {train,test} ...
 ```
+
+for training intent classifier use `ruth train` command
+
 ## Training 
 
 
@@ -159,6 +162,9 @@ pipeline:
     model_name: 'bert-base-uncased'
 
 ``` 
+
+after training intent classifier you can now parse message to  the model using `ruth parse` command
+
 ## Parsing 
 
 To parse the text, run the following command
@@ -175,6 +181,8 @@ Parameters
 
 If model path is not provided, Parse function will use the latest model in the model directory as a default model.
 
+after training intent classifier you can now test the model using `ruth test` command
+
 ## Testing 
 
 To test the model performance, run the following command
@@ -190,6 +198,12 @@ Parameters
 -m, --model_path (optionol)
 ```
 If model path is not provided, `Evaluate function` will use the latest model in the model directory as a default model. If output folder is not provided, the result will be saved in `results` folder in the current working directory.
+
+for deploying the model in production environment we use fast api to create a web server to serve the model. Its a simple web server that can be used to parse the text message and get response from the model.
+
+for more information about fast api visit [here](https://fastapi.tiangolo.com/)
+
+for deploying the model run `ruth deploy` command
 
 ### Deployment 
 RUTH uses FastAPI to deploy the model as a REST API, to deploy the model, run the following command
