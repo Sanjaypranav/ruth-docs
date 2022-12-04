@@ -17,9 +17,6 @@ To initialize Ruth, run the following command:
 ```bash
 ruth init
 ```
-the output will be as follows:
-
-<img src="img/ruth-cli.png"></img>
 
 ## Usage
 
