@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Puretalk.ai', // Usually your GitHub org/user name.
+  projectName: 'ruth-nlu', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -57,9 +57,8 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Puretalk.ai',
         logo: {
-          alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -67,7 +66,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -84,7 +83,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'docs',
                 to: '/docs/intro',
               },
             ],
